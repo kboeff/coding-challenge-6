@@ -1,9 +1,13 @@
-// test input ... [1,2,"20","20","3","1",4,591,392,391,2,5,10,2,1,1,1,20,20]
-let inp = document.getElementById("messy-data");
-let button = document.getElementById("org-btn");
-let result = document.getElementById("result1");
+const input = [1,2,"20","20","3","1",4,591,392,391,2,5,10,2,1,1,1,20,20]
 
 const organize = (input) => {
+	input.sort(function(a,b) {
+	  if (typeof a === 'string' || typeof b === 'string') {
+		return a > b ? 1 : -1;
+	  }
+	  return a - b;
+	});
+	
 	let output = [];
 	const ints = [];
 	const strings = [];
@@ -54,21 +58,4 @@ const organize = (input) => {
 	return output;
 }
 
-var addAnswer = () => {
-	const input = inp.value.split(',').forEach(val => val );
-	console.log(typeof input, input);
-	// presort the data to keep string types in the end
-	input.sort(function(a,b) {
-	  if (typeof a === 'string' || typeof b === 'string') {
-		return a > b ? 1 : -1;
-	  }
-	  return a - b;
-	});
-	result.innerHTML = organize(input);
-	console.log(result.innerHTML);
-}
-
-
-
-button.addEventListener("click", addAnswer);
-
+console.log(organize(input));
