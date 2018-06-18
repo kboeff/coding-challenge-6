@@ -18,10 +18,8 @@ const organize = (input) => {
 		let item = input[i];
 		// associative array keys (object properties) are stored as strings
 		// so we need to distinct between int and string here again
-		if(typeof item === 'string') {
+		if (typeof item === 'string')
 			item += 's';
-			console.log(item);
-		}
 
 		if (counts[item] === undefined)
 			counts[item] = 1;
@@ -44,7 +42,8 @@ const organize = (input) => {
 				temp.push(parseInt(index));
 			ints.push(temp);
 		}
-	}	
+	}
+	// this handles empty "string" type or empty integer arrays
 	if(ints.length !== 0) {
 		if(strings.length !== 0) {
 			output.push(ints);
