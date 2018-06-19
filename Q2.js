@@ -49,7 +49,7 @@ const time2 = [];
 let ans1 = [];
 let ans2 = [];
 
-for (var i = 50000; i <= 1000000; i+= 50000) {
+for (var i = 50000; i <= 100000; i+= 50000) {
 	let ar = generateArray(i);
 	var old_time = new Date();
 		additions1(ar,0);
