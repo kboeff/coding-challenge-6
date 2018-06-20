@@ -1,6 +1,6 @@
 let hex = "#ffaa22";
 
-const hexToRgb = (input) => {
+const toggleHex = (input) => {
 	let answer = "";
 	if(input.includes("rgb")) {
 		input = input.replace("rgb", "")
@@ -28,4 +28,4 @@ const hexToRgb = (input) => {
 	return answer;
 }
 
-hexToRgb(hex);
+toggleHex(hex);
