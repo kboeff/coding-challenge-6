@@ -13,4 +13,6 @@ Assuming negative numbers and duplicates are valid input.<br>
 Same numbers are counted as valid adding blocks when it apllies <em>(eg. 2+2=4)</em>.<br>
 Order of appearance is irrelevant <em>(eg. if we have [1,3] and [3,1], only the first to appear is added to the answer)</em>.
 
-Q3 ->
+Q3 -> <strong>toggleHex()</strong><br>
+Detects the type of input hex/rgb and does the conversion.
+Yet to be released as npm package.
