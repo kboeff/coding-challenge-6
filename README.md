@@ -5,4 +5,5 @@ Default test cases are left in the code - displayed via console.log.
 
 # function names
 Q1 -> <b>organize()</b><br>
-Q2 -> 
+Q2 -> <b>additions()
+Q3 ->
