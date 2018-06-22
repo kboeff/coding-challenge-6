@@ -18,4 +18,4 @@ Detects the type of input hex/rgb and does the conversion.
 Yet to be released as npm package.
 
 The function is published as npm package: <em>npm-togglehex</em><br>
-The repo is here: github.com/kboeff/npm-togglehex
+The repo is here: <a href="https://github.com/kboeff/npm-togglehex">github.com/kboeff/npm-togglehex</a>
