@@ -16,3 +16,6 @@ Order of appearance is irrelevant <em>(eg. if we have [1,3] and [3,1], only the 
 Q3 -> <strong>toggleHex()</strong><br>
 Detects the type of input hex/rgb and does the conversion.
 Yet to be released as npm package.
+
+The function is published as npm package: <em>npm-togglehex</em><br>
+The repo is here: github.com/kboeff/npm-togglehex
